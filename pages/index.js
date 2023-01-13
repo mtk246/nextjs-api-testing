@@ -1,5 +1,6 @@
 import Head from 'next/head';
-import { APIComponent, GetData } from '../components/APIComponent';
+import { APIComponent } from '../components/APIComponent';
+import Link from 'next/link';
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -12,8 +13,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+        <Link href="/page2">Go to Page 2</Link>
         <APIComponent />
       </main>
     </>
-  )
+  );
 }
